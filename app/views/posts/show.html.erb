@@ -1,0 +1,9 @@
+post#show
+
+<%= @post.text %>
+
+<%= form_with model: [@post,@comment] do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :text %>
+  <%= f.submit %>
+<% end %> 
